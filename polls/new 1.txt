@@ -1,0 +1,16 @@
+# Create your models here.
+class myCsQuestions(CsvModel):
+        Question = CharField()	
+        Choice_1 = CharField()
+        Votes_1	= IntegerField()
+        Choice_2 = CharField()
+        Votes_2	= IntegerField()
+        Choice_3 = CharField()
+        Votes_3	= IntegerField()
+        Choice_4 = CharField()
+        Votes_4 = IntegerField()
+class Meta:
+ delimiter =","
+ 
+ from adaptor.model import CsvModel
+from adaptor.fields import CharField, IntegerField, BooleanField
